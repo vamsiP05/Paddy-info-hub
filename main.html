@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paddy Plant Info</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="main img/logo.png" alt="Rice Plant Logo" class="logo">
+            <h1>Rice Plant Information Hub</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="main.html">Home</a></li>
+                <li>
+                    <a href="#">Rice Varieties</a>
+                    <ul class="dropdown">
+                        <li><a href="basmati.html">Basmati</a></li>
+                        <li><a href="jasmine.html">Jasmine</a></li>
+                        <li><a href="arborio.html">Arborio</a></li>
+                        <li><a href="sushi.html">Sushi Rice</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="diseases.html">Diseases</a>
+                    <ul class="dropdown">
+                        <li><a href="blast.html">Rice Blast</a></li>
+                        <li><a href="sheath_blight.html">Sheath Blight</a></li>
+                        <li><a href="brown_spot.html">Brown Spot</a></li>
+                        <li><a href="bacterial_blight.html">Bacterial Blight</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="intro">
+            <h2>Welcome to the Rice Plant Information Hub</h2>
+            <p>Learn about different rice plant varieties, common diseases, and how to keep your crops healthy.</p>
+        </section>
+
+        <section id="disease-prediction">
+            <h2>Disease Detection</h2>
+            <p>Capture an image of your rice plant leaf to detect diseases using our model.</p>
+            <form id="upload-form" action="/predict" method="POST" enctype="multipart/form-data">
+                <input type="file" accept="image/*" capture="camera" name="leaf-image" required>
+                <button type="submit">Predict Disease</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Rice Plant Information Hub</p>
+    </footer>
+
+    <script src="path/to/your/script.js"></script>
+</body>
+</html>
